@@ -1,0 +1,43 @@
+.number-input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  /* max-width: 300px; */
+  font-family: Arial, sans-serif;
+}
+
+.number-input-field .input-label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+}
+
+.number-input-field .input-element {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.number-input-field .input-element:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.number-input-field .input-element[disabled] {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.number-input-field .input-error {
+  border-color: #dc3545;
+}
+
+.number-input-field .error-message {
+  margin-top: 0.25rem;
+  color: #dc3545;
+  font-size: 0.875rem;
+}

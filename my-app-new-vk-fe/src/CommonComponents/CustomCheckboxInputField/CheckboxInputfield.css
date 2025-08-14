@@ -1,0 +1,31 @@
+.checkbox-input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.checkbox-input-field input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox-input-field input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+}
+
+.checkbox-input-field label {
+  font-size: 1rem;
+  color: black;
+  user-select: none;
+}
+
+.checkbox-input-field .error-message {
+  margin-left: 24px;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
