@@ -1,13 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
+
+        <Route path="/dashboard" element={<Dashboard />}>
+          {/* <Route index element={<Profile />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Setting />} />
+          <Route path="new-registration" element={<RegistrationPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

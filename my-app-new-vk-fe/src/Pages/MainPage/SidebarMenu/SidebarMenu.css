@@ -1,4 +1,41 @@
-.main-SidebarMenu-class {
-    color: black;
-    background-color: bisque;
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+  width: 200px; /* typical sidebar width */
+  height: auto; /* full viewport height */
+  box-sizing: border-box;
+  overflow-y: auto; /* enable vertical scroll */
+}
+
+.sidebar-listing {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.sidebar-listing li {
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-listing li:hover {
+  background-color: cadetblue;
+  color: black;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: cadetblue;
+  border-radius: 3px;
 }

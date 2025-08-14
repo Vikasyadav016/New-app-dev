@@ -1,4 +1,38 @@
-.main-topbarNavigator-class {
-    color: black;
-    background-color: bisque;
+.dashboard {
+  width: 100%;
+  color: cadetblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.navigationbar {
+  display: flex;
+  justify-content: center; /* center the nav content horizontally */
+  align-items: center; /* vertically center the items */
+  background-color: black;
+  padding: 10px 0; /* some vertical padding */
+}
+
+.listing {
+  display: flex;
+  list-style: none; /* remove default bullet points */
+  margin: 0;
+  padding: 0;
+  gap: 15px; /* space between list items */
+}
+
+.listing li {
+  color: white; /* make list items visible on black background */
+  cursor: pointer; /* make it look clickable */
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.listing li:hover {
+  background-color: cadetblue;
+  color: black;
+}
+
+.profile-styling {
+  margin-left: auto;
 }
