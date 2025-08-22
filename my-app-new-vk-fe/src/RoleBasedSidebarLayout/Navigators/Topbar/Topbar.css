@@ -1,0 +1,72 @@
+.topbar {
+    height: 60px;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.app-logo {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.app-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.topbar-right {
+    position: relative;
+}
+
+/* .user-icon {
+    cursor: pointer;
+} */
+
+.user-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* makes the circle */
+  padding: 8px; /* space around the icon */
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Circle effect on hover */
+.user-icon:hover {
+  box-shadow: 0 0 0 3px var(--circle-color, #b31a02);
+}
+
+
+.user-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.user-dropdown button {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+}
