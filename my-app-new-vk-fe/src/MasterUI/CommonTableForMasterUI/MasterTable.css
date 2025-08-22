@@ -1,0 +1,48 @@
+.master-table-container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.master-table-search {
+  margin-bottom: 1rem;
+}
+
+.master-table-search input {
+  padding: 0.5rem;
+  width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.master-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.master-table thead tr {
+  background-color: var(--heading-color, #007BFF);
+  color: white;
+  text-align: left;
+}
+
+.master-table th,
+.master-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+}
+
+.master-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.master-table-checkbox-cell {
+  width: 40px;
+  text-align: center;
+}
+
+.master-table-action-cell {
+  width: 120px;
+  text-align: center;
+}
